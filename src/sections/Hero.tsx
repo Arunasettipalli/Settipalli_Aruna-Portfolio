@@ -1,3 +1,5 @@
+import photo from "../assets/Photo.png"; // adjust relative path if Hero.tsx is nested
+
 const Hero = () => {
   return (
     <section
@@ -47,7 +49,7 @@ const Hero = () => {
           {/* RIGHT */}
           <div className="flex justify-center md:justify-end md:pr-6">
             <img
-              src="/src/assets/Photo.png"
+              src={photo} // imported image
               alt="Aru"
               className="w-52 md:w-60 lg:w-64 rounded-b-[999px] object-cover"
             />
